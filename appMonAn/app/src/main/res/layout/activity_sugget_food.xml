@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/nen"
+        android:layout_width="match_parent"
+        android:layout_height="272dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="-80dp"
+        android:src="@drawable/bk">
+    </ImageView>
+
+<!--    <TextView-->
+<!--        android:id="@+id/timkiem"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/nameapp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:fontFamily="@font/font6"-->
+<!--        android:text="Tìm kiếm "-->
+<!--        android:textSize="60sp" />-->
+
+    <ImageView
+        android:id="@+id/taskmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/taskmenu"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/nameapp"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/nameapp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="70dp">
+    </ImageView>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="287dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/nameapp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/search"
+        android:ems="10"
+        android:hint="Tìm kiếm..."
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textSize="15sp" />
+    <GridLayout
+        android:layout_below="@id/nen"
+        android:layout_width="match_parent"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp">
+<!--        card view de hien thi menu cho-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/food1"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="30dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="70dp">
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="140dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/monkho" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Món Kho"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/food2"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_marginStart="15dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="70dp">
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="140dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/xao"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Món Xào"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:layout_marginStart="25dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/food3"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:layout_marginStart="15dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="70dp">
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="140dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/chien"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Món Chiên"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/food4"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_marginStart="30dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="140dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/nuong"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Món Nướng"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/food5"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:layout_marginStart="15dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="140dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/hasan"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hải Sản"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/food6"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:layout_marginStart="15dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="140dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/breakfood"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ăn Nhẹ"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:layout_marginStart="25dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+</RelativeLayout>

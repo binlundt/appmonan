@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Resutl.resutl_price">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_image"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_rs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/breakfood" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/bk"
+        android:scaleType="centerCrop"/>
+    <ImageView
+        android:id="@+id/nameapp"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/nameapp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="70dp">
+    </ImageView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bk"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100.000VND"
+            android:textSize="50sp"
+            android:fontFamily="@font/font5"
+            android:textColor="@color/mau"
+            android:layout_gravity="center"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/cv_image"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="30dp">
+        <TextView
+            android:id="@+id/name_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:background="@drawable/title"/>
+        <TextView
+            android:id="@+id/nguyenlieu"
+            android:layout_width="280dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/test"
+            android:layout_marginStart="10dp"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

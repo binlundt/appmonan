@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "931982345822",
+    "firebase_url": "https://appmonan.firebaseio.com",
+    "project_id": "appmonan",
+    "storage_bucket": "appmonan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:931982345822:android:85b840941b2f95517156cf",
+        "android_client_info": {
+          "package_name": "com.example.appmonan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "931982345822-raf4sjrr0jgb86m8ttp2dult896sh6o4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGMCLSRAno4CKtyefMa4I4KFAPoOobucM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "931982345822-raf4sjrr0jgb86m8ttp2dult896sh6o4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

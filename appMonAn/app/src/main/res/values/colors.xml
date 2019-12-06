@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFC107</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+    <color name="mau">#FFFFFF</color>
+    <color name="colorTransparentWhite">#BDB8B8</color>
+    <color name="mau2">#FFC107</color>
+    <color name="mau3">#FF0000</color>
+    <color name="mau4">#FA6464</color>
+</resources>
